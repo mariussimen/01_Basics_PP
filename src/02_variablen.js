@@ -27,11 +27,11 @@ console.log("Hallo, I am " + firstName +" "+ familyName); // Hallo , I am  Mariu
     JS ist ein untypisierte Sprache
  */
 
-let test;
+//let test;
 // test = "HI";
 // test = 2;
 // undefined
-console.log("Datentyp: " + typeof test);  // Ausgabe Datentyp
+/*console.log("Datentyp: " + typeof test);  // Ausgabe Datentyp
 console.log("Inhalt: "+ test);   // Ausgabe Inhalt
 console.log("---------------")
 
@@ -48,6 +48,16 @@ console.log("---------------")
 test = true;
 console.log("Datentyp: " + typeof test);  // Ausgabe Datentyp
 console.log("Inhalt: "+ test);   // Ausgabe Inhalt
-console.log("---------------")
+console.log("---------------")*/
 
+// Variable 
+/*let test;  // Variable : Dekalaration
+test ="HI"; // WErtzuweisung (Initialisierung)
+test ="Hallo"; // Überstreitung
+console.log("Datentyp: " + typeof test);
+console.log("Inhalt: " + test )*/
+
+const test2= "HI";
+//test2 = "Hallo";
+console.log("Inhalt: " + test2);
 
