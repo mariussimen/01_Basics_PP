@@ -23,6 +23,23 @@ console.log("------------------");
 // entweder JA oder nix ... alternativlos
 // Türsteher-Politik (Doors 10 p.m.)
 
-if (isJohnOlder){
+/*if (isJohnOlder){
   console.log("John is Older ");
+}*/
+
+
+
+/************ IF - ELSE  ************/
+// mit Alternative  
+// entweder ja oder nein
+
+
+if (isJohnOlder)
+{
+
+    console.log("John is Older ");
+}
+else
+ {
+    console.log("John is younger: ");
 }
