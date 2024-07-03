@@ -57,7 +57,8 @@ test ="Hallo"; // Überstreitung
 console.log("Datentyp: " + typeof test);
 console.log("Inhalt: " + test )*/
 
-const test2= "HI";
-//test2 = "Hallo";
-console.log("Inhalt: " + test2);
+// Konstante
+const test2= "HI"; // Deklaration + Wertzuweisung gemeinsam
+test2 = "Hallo"; // Laufzeit-Fehler
+console.log("Inhalt: " + test2);// Ausgabe
 
