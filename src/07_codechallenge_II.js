@@ -28,7 +28,8 @@ while (alter<0) {
 }
 console.log("Datentyp: " + typeof name);
 console.log("Datentyp: " + typeof alter);
-console.log(name + " ist " + alter+ " jahre Alt:");
+console.log(name + " ist " + alter + " jahre Alt:");
+
 
 // if(alter>=0 && alter<=5)
 //     {
@@ -50,17 +51,17 @@ console.log(name + " ist " + alter+ " jahre Alt:");
 
 switch (true) {
     case (alter>=0 && alter<=5):
-        console.log(name + " " + " kann trinkt Milch");
+        console.log(name + " " + " kann  Milch trinken");
         break;
     case (alter>= 6 && alter<= 12):
-        console.log(name + " " + " kann trinkt Saft");
+        console.log(name + " " + " kann  Saft trinken");
         break;
     case (alter>=13 && alter<=17):
-        console.log(name + " " + "kann trinkt Cola");
+        console.log(name + " " + "kann  Cola trinken");
         break;
     
     default:
-        console.log(name+ " " + " kann trinkt Wein:");
+        console.log(name+ " " + " kann  Wein trinken:");
         
         break;
 }
