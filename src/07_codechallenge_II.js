@@ -29,6 +29,7 @@ while (alter<0) {
 console.log("Datentyp: " + typeof name);
 console.log("Datentyp: " + typeof alter);
 console.log(name + " ist " + alter+ " jahre Alt:");
+
 // if(alter>=0 && alter<=5)
 //     {
 //     console.log(name + " " + "trinkt Milch!!");
