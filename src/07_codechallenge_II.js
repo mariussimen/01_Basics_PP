@@ -23,12 +23,12 @@ let Name, Alter ;
 Name  = prompt("Geben Sie Ihren Namen ein!!: ");
 Alter = parseInt(prompt("Geben Sie Ihren Alter ein!!! "));
 
-// while (Alter<0) {
-//     Alter = parseInt(prompt("Geben Sie Ihren Alter ein: "));
-// }
+while (Alter<0) {
+    Alter = parseInt(prompt("Geben Sie Ihren Alter ein: "));
+}
 console.log("Datentyp: " + typeof Name);
 console.log("Datentyp: " + typeof Alter);
-
+console.log(Name + " ist " + Alter+ " jahre Alt:");
 // if(Alter>=0 && Alter<=5)
 //     {
 //     console.log(Name + " " + "trinkt Milch!!");
@@ -46,28 +46,21 @@ console.log("Datentyp: " + typeof Alter);
 
 //  ++++++++    Switch case ++++++
 
-// Alter = Number(Alter>=0 && Alter<=5) //" trinkt Milch";
-// Alter = Number(Alter>=6 && Alter<=12) //" trinkt saft";
-// Alter = Number(Alter>=13 && Alter<=17) //" trinkt Cola";
-// Alter = Number(Alter>=18) //"trinkt Wein";
-switch (Alter) {
-    case (Alter>=0 && Alter<=5
-        
-    ):
-        console.log(Name + " "+ " trinkt Milch")
+
+switch (true) {
+    case (Alter>=0 && Alter<=5):
+        console.log(Name + " " + " kann trinkt Milch");
         break;
-    case (Alter>=6 && Alter<=12):
-        console.log(Name + " " + " trinkt Saft");
+    case (Alter>= 6 && Alter<= 12):
+        console.log(Name + " " + " kann trinkt Saft");
         break;
     case (Alter>=13 && Alter<=17):
-        console.log(Name + " " + "trinkt Cola");
+        console.log(Name + " " + "kann trinkt Cola");
         break;
-    case (Alter>=18):
-        console.log(Name + " "+ " trinkt Wein");
-        break;
+    
     default:
-        console.log("Never executes");
-        // Alter = parseInt(prompt("Geben Sie Ihren Alter ein!!! "));
+        console.log(Name+ " " + " kann trinkt Wein:");
+        
         break;
 }
          
