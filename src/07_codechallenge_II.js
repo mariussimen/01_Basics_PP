@@ -18,48 +18,48 @@ Alter 13-17 // Cola
 
 const prompt = require('prompt-sync')({sigint: true});
 
-let Name, Alter ;
+let name, alter ;
 
-Name  = prompt("Geben Sie Ihren Namen ein!!: ");
-Alter = parseInt(prompt("Geben Sie Ihren Alter ein!!! "));
+name  = prompt("Geben Sie Ihren Namen ein!!: ");
+alter = parseInt(prompt("Geben Sie Ihren Alter ein!!! "));
 
-while (Alter<0) {
-    Alter = parseInt(prompt("Geben Sie Ihren Alter ein: "));
+while (alter<0) {
+    alter = parseInt(prompt("Geben Sie Ihren Alter ein: "));
 }
-console.log("Datentyp: " + typeof Name);
-console.log("Datentyp: " + typeof Alter);
-console.log(Name + " ist " + Alter+ " jahre Alt:");
-// if(Alter>=0 && Alter<=5)
+console.log("Datentyp: " + typeof name);
+console.log("Datentyp: " + typeof alter);
+console.log(name + " ist " + alter+ " jahre Alt:");
+// if(alter>=0 && alter<=5)
 //     {
-//     console.log(Name + " " + "trinkt Milch!!");
+//     console.log(name + " " + "trinkt Milch!!");
 //     }
-// else if (Alter>=6 && Alter<=12){
+// else if (alter>=6 && alter<=12){
 //         console.log(Name +" " + "trinkt Saft!! ");
 //     }
-// else if( Alter>=13 && Alter<=17)
+// else if( alter>=13 && alter<=17)
 //     {
-//         console.log(Name + " "+ "trinkt Cola!! ");
+//         console.log(name + " "+ "trinkt Cola!! ");
 //     }
 // else{
-//     console.log(Name + " " + "trinkt wein" );
+//     console.log(name + " " + "trinkt wein" );
 // }
 
 //  ++++++++    Switch case ++++++
 
 
 switch (true) {
-    case (Alter>=0 && Alter<=5):
-        console.log(Name + " " + " kann trinkt Milch");
+    case (alter>=0 && alter<=5):
+        console.log(name + " " + " kann trinkt Milch");
         break;
-    case (Alter>= 6 && Alter<= 12):
-        console.log(Name + " " + " kann trinkt Saft");
+    case (alter>= 6 && alter<= 12):
+        console.log(name + " " + " kann trinkt Saft");
         break;
-    case (Alter>=13 && Alter<=17):
-        console.log(Name + " " + "kann trinkt Cola");
+    case (alter>=13 && alter<=17):
+        console.log(name + " " + "kann trinkt Cola");
         break;
     
     default:
-        console.log(Name+ " " + " kann trinkt Wein:");
+        console.log(name+ " " + " kann trinkt Wein:");
         
         break;
 }
