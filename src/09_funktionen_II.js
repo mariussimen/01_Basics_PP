@@ -23,10 +23,10 @@ output(divide(0,2));
 output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
-	if (b!=0){
-	return a/b;
-} else {
+	if (b==0){
 	return ERROR_STR_DIV;
+} else {
+	return a/b;
 }
 }
 // module: multiplication a * b |  test:
