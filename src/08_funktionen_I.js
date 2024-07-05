@@ -36,7 +36,7 @@ function ausgabeNamen() {
 // ausgabeNamen2("Maxime");
 // ausgabeNamen2("Saba"); 
 
-function ausgabeNamen2( firstName) {
+function ausgabeNamen2(firstName) {
    
     console.log("Hallo " + firstName + "!");
 }

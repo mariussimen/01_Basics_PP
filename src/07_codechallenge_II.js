@@ -20,11 +20,11 @@ const prompt = require('prompt-sync')({sigint: true});
 
 let name, alter ;
 
-name  = prompt("Geben Sie Ihren Namen ein!!: ");
-alter = parseInt(prompt("Geben Sie Ihren Alter ein!!! "));
+name  = prompt("Geben Sie Ihrem Namen ein!!: ");
+alter = parseInt(prompt("Geben Sie Ihrem Alter ein!!! "));
 
 while (alter<0) {
-    alter = parseInt(prompt("Geben Sie Ihren Alter ein: "));
+    alter = parseInt(prompt("Geben Sie Ihrem Alter ein: "));
 }
 console.log("Datentyp: " + typeof name);
 console.log("Datentyp: " + typeof alter);
