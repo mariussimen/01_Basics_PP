@@ -17,10 +17,11 @@ const prompt = require('prompt-sync')({sigint: true});
 
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich";
 const ERROR_STR_GEN = "Irgendwas ging schief!";
+const GAP = " ";
 
 startApp()
   function startApp() {
-	output(calculator(getNummer(),getNummer2(),getOp()));
+	output("the Result is:"+ GAP + calculator(getNummer(),getNummer2(),getOp(),getResult()));
   }
 
   function getNummer() {
@@ -32,7 +33,9 @@ function getNummer2() {
 function getOp() {
 	return prompt("Op?: ");
 }
-
+function getResult() {
+	return ("the result is: ");
+}
 // module: calculator | tests:
 agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
@@ -61,7 +64,8 @@ switch (op) {
 	case "/": // Divison
 	case ":":
 		return divide(a,b);
-		
+	case "%":
+		return modulo(a,b);	
 	default:
 		return ERROR_STR_GEN;
 		
@@ -111,13 +115,15 @@ function subtract(a,b) {
 function add(a,b) {
 	return a + b;
 }
-
-
+// module modulo a%b | test:----
+function modulo(a,b) {
+	return a%b;
+}
 
 // module: output | test:
-// output("hello");
-// output(2);
+//  output("hello");
 function output(outputData) {
 	console.log(outputData);
+	
 }
   
