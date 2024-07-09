@@ -125,6 +125,7 @@ function getSentenceArr2(arr) {
  }
 //   return str.trim() + PUNCT;
   // 3 Varianten: Ausnutzen  von generischen Funktionen.....
+  console.log("hi");
   return arr.join(GAP) + PUNCT;
 }
 
